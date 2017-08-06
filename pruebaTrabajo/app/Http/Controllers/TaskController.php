@@ -11,6 +11,7 @@ use Validator;
 
 class TaskController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -48,8 +49,7 @@ class TaskController extends Controller
             return response()->json($task,200);
         } catch (\Exception $e){
             Log::critical("No mostro tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
-            return response('Something bad', 500);
-        }
+            return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);        }
     }
 
     /**
@@ -85,10 +85,10 @@ class TaskController extends Controller
                 'status' => $request->input('status'),
                 'description' => $request->input('description'),
             ]);
-            return response()->json(['status' => true, 'actualizada'], 200);
+            return response()->json(['status' => true, 'data' => 'actualizada'], 200);
         } catch(\Exception $e){
             Log::critical("No actualizo tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
-            return response('Something bad', 500);
+            return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);
         }
     }
 
@@ -109,8 +109,7 @@ class TaskController extends Controller
             return response()->json(['status' => 'success', 'data' =>"Tarea eliminada correctamente"], 200);
         } catch (\Exception $e){
             Log::critical("No elimino tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
-            return response('Something bad', 500);
-        }
+            return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);        }
     }
 
     /**
@@ -135,6 +134,7 @@ class TaskController extends Controller
                 'user_id.required' => 'Es requerido el id del usuario',
                 'user_name.required' => 'Es requerido el nombre del usuario',
                 'user_email.required' => 'Es requerido el correo del usuario',
+                //'user_email.unique' => 'Este correo electronico ya se encuentra registrado',
             ];
 
             $validator = Validator::make($request->all(),$rules,$messages);
@@ -143,7 +143,21 @@ class TaskController extends Controller
                 return response()->json(['status' => 'error', 'data' => $validator->errors()], 404);
             }
 
-            $this->userVerification($request);
+            $user = User::find($request->user_id);//verificar usuario
+            if (is_null($user)) { // No existe por id
+                $user = User::where('email',$request->user_email)
+                    ->first();
+                if(is_null($user)){ //no existe el correo
+                    $user = new User();
+                    $user->id = $request->user_id;
+                    $user->name = $request->user_name;
+                    $user->email = $request->user_email;
+                    $user->save();
+                } else {
+                    return response()->json(['status' => 'error', 'data' => "Correo electronico ya registrado"], 404);
+                }
+            }
+           // $this->userVerification($request);
 
             $task = new Task([
                 'name' => $request->input('name'),
@@ -154,22 +168,14 @@ class TaskController extends Controller
             return response()->json(['status' => 'success', 'data' => 'guardado'], 200);
         } catch (\Exception $e) {
             Log::critical("No almaceno tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
-            return response('Something bad', 500);
-        }
+            return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);        }
     }
 
     /*
      * Verifica que si el usuario aun no esta en la base de datos, lo almacena
      */
     private function userVerification(Request $request){
-        $user = User::find($request->user_id);
-        if (is_null($user)) { // No existe
-            $user = new User();
-            $user->id = $request->user_id;
-            $user->name = $request->user_name;
-            $user->email = $request->user_email;
-            $user->save();
-        }
+
     }
 
     /**

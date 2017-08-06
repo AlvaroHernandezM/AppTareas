@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      *
@@ -112,6 +114,15 @@ class UserController extends Controller
             return response()->json("Usuario eliminado correctamente", 200);
         } catch (\Exception $e){
             Log::critical("No elimino usuario: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
+            return response('Something bad', 500);
+        }
+    }
+
+    public function tasksOwner(){
+        try{
+
+        } catch (\Exception $e){
+            Log::critical("No encuentro mis tareas: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response('Something bad', 500);
         }
     }

@@ -22,6 +22,8 @@ Route::resource('users','UserController',['only' => [
     'index', 'store', 'show', 'update', 'destroy'
 ]]);
 
+Route::get('users/{id}/tasks', 'UserController@tasksOwner');
+
 Route::resource('tasks','TaskController',['only' => [
     'index', 'store', 'show', 'update', 'destroy'
 ]]);
