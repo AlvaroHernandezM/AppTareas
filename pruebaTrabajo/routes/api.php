@@ -21,3 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('users','UserController',['only' => [
     'index', 'store', 'show', 'update', 'destroy'
 ]]);
+
+Route::resource('tasks','TaskController',['only' => [
+    'index', 'store', 'show', 'update', 'destroy'
+]]);
