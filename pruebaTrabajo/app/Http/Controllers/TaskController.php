@@ -74,6 +74,12 @@ class TaskController extends Controller
     {
         try{
             $task = Task::find($id);
+            if(!$task){
+                return response()->json(['Tarea no existente'], 404);
+            }
+            if($task->user_id!=$request->user_id){
+                return response()->json(['Usuario no coincide'], 404);
+            }
             $task->update([
                 'name' => $request->input('name'),
                 'status' => $request->input('status'),
@@ -100,7 +106,7 @@ class TaskController extends Controller
                 return response()->json(['Tarea no existente'], 404);
             }
             $task->delete();
-            return response()->json("Tarea eliminada correctamente", 200);
+            return response()->json(['status' => 'success', 'data' =>"Tarea eliminada correctamente"], 200);
         } catch (\Exception $e){
             Log::critical("No elimino tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response('Something bad', 500);
@@ -134,7 +140,7 @@ class TaskController extends Controller
             $validator = Validator::make($request->all(),$rules,$messages);
 
             if ($validator->fails()) {
-                return response()->json(['status' => false, $validator->errors()], 404);
+                return response()->json(['status' => 'error', 'data' => $validator->errors()], 404);
             }
 
             $this->userVerification($request);
@@ -145,13 +151,13 @@ class TaskController extends Controller
                 'user_id' => $request->input('user_id'),
             ]);
             $task->save();
-            return response()->json(['status' => true, 'guardado'], 200);
+            return response()->json(['status' => 'success', 'data' => 'guardado'], 200);
         } catch (\Exception $e) {
             Log::critical("No almaceno tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response('Something bad', 500);
         }
     }
-    
+
     /*
      * Verifica que si el usuario aun no esta en la base de datos, lo almacena
      */
@@ -166,4 +172,43 @@ class TaskController extends Controller
         }
     }
 
+    /**
+     * meotod que permite cambiar a 1 (cerrado ) el estado de una tarea por medio
+     * del id de la tarea y del usuario
+     **/
+    public function close(Request $request){
+        if($request->id && $request->user_id){
+            $task = Task::find($request->id);
+            if(!$task){
+                return response()->json(['Tarea no existente'], 404);
+            }
+            if($task->user_id!=$request->user_id){
+                return response()->json(['Usuario no coincide'], 404);
+            }
+            $task->update(['status' => 1]);
+            return response()->json(['status' => 'success', 'data' => 'tarea_cerrada'], 200);
+        } else {
+            return response()->json(['status' => 'error', 'data' => 'Parametro incorrecto'],500);
+        }
+    }
+
+    /**
+     * meotod que permite cambiar a 0 (abierto) el estado de una tarea por medio
+     * del id de la tarea y del usuario
+     **/
+    public function open(Request $request){
+        if($request->id && $request->user_id){
+            $task = Task::find($request->id);
+            if(!$task){
+                return response()->json(['status' => 'error', 'data' => 'Tarea no existente'], 404);
+            }
+            if($task->user_id!=$request->user_id){
+                return response()->json(['status' => 'error', 'data' => 'Usuario no coincide'], 404);
+            }
+            $task->update(['status' => 0]);
+            return response()->json(['status' => 'success', 'data' => 'Tarea abierta'], 200);
+        } else {
+            return response()->json(['status' => 'error', 'data' => 'Parametro incorrecto'],500);
+        }
+    }
 }

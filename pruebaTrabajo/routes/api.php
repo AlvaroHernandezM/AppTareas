@@ -25,3 +25,6 @@ Route::resource('users','UserController',['only' => [
 Route::resource('tasks','TaskController',['only' => [
     'index', 'store', 'show', 'update', 'destroy'
 ]]);
+
+Route::post('tasks/{id}/close', 'TaskController@close');
+Route::post('tasks/{id}/open', 'TaskController@open');
