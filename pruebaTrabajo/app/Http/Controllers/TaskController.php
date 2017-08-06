@@ -43,11 +43,11 @@ class TaskController extends Controller
     {
         try{
             $task = Task::find($id);
-            if(!$task){
+            if(!$task){ //verifica que exista la tarea
                 return response()->json(['status' => false, 'data' =>'Tarea no existente'], 404);
             }
             return response()->json($task,200);
-        } catch (\Exception $e){
+        } catch (\Exception $e){ //una validacion no esperada y se escribe en log
             Log::critical("No mostro tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);        }
     }
@@ -74,21 +74,34 @@ class TaskController extends Controller
     {
         try{
             $task = Task::find($id);
-            if(!$task){
+            if(!$task){ //verifica que exista la tarea
                 return response()->json(['status' => false, 'data' =>'Tarea no existente'], 404);
             }
-            if($task->user_id!=$request->user_id){
+            if($task->user_id!=$request->user_id){ //verifica que coincide el usuario
                 return response()->json(['status' => false, 'data' =>'Usuario no coincide'], 404);
             }
-            $task->update([
-                'name' => $request->input('name'),
-                'status' => $request->input('status'),
-                'description' => $request->input('description'),
-            ]);
+            $taskEqualName = Task::where('name',$request->input('name'))->first();
+            if($taskEqualName->name == $task->name){ //verifica que no exista otra tarea con ese nombre
+                $task->update([
+                    'name' => $request->input('name'),
+                ]);
+            } else {
+               return response()->json(['status' => false, 'data' =>'Otra tarea ya tiene este nombre'], 404);
+            }
+            if(!is_null($request->input('description'))){ //verifica si se envio la descripcion para actualizar
+                $task->update([
+                    'description' => $request->input('description'),
+                ]);
+            }
+            if(!is_null($request->input('status'))){ //verifica si se envio el estado para actualizar
+                $task->update([
+                    'status' => $request->input('status'),
+                ]);
+            }
             return response()->json(['status' => true, 'data' => 'actualizada'], 200);
-        } catch(\Exception $e){
+        } catch(\Exception $e){ //una validacion no esperada y se escribe en log
             Log::critical("No actualizo tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
-            return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);
+            return response(['status' => false, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);
         }
     }
 
@@ -102,12 +115,12 @@ class TaskController extends Controller
     {
         try{
             $task = Task::find($id);
-            if(!$task){
+            if(!$task){ //verifica que exista la tarea
                 return response()->json(['status' => false, 'data' => 'Tarea no existente'], 404);
             }
             $task->delete();
             return response()->json(['status' => 'success', 'data' =>"Tarea eliminada correctamente"], 200);
-        } catch (\Exception $e){
+        } catch (\Exception $e){ //una validacion no esperada y se escribe en log
             Log::critical("No elimino tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response(['status' => false, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);        }
     }
@@ -134,31 +147,28 @@ class TaskController extends Controller
                 'user_id.required' => 'Es requerido el id del usuario',
                 'user_name.required' => 'Es requerido el nombre del usuario',
                 'user_email.required' => 'Es requerido el correo del usuario',
-                //'user_email.unique' => 'Este correo electronico ya se encuentra registrado',
             ];
 
             $validator = Validator::make($request->all(),$rules,$messages);
 
-            if ($validator->fails()) {
+            if ($validator->fails()) { //verifica las validaciones con las reglas definidas anteriormente
                 return response()->json(['status' => false, 'data' => $validator->errors()], 404);
             }
 
-            $user = User::find($request->user_id);//verificar usuario
-            if (is_null($user)) { // No existe por id
+            $user = User::find($request->user_id);
+            if (is_null($user)) { //verificar si existe el usuario
                 $user = User::where('email',$request->user_email)
                     ->first();
-                if(is_null($user)){ //no existe el correo
+                if(is_null($user)){ //no existe alguien con ese correo
                     $user = new User();
                     $user->id = $request->user_id;
                     $user->name = $request->user_name;
                     $user->email = $request->user_email;
                     $user->save();
                 } else {
-                    return response()->json(['status' => false, 'data' => "Correo electronico ya registrado"], 404);
+                    return response()->json(['status' => false, 'data' => "Correo electronicos registrado con otra cuenta"], 404);
                 }
             }
-           // $this->userVerification($request);
-
             $task = new Task([
                 'name' => $request->input('name'),
                 'description' => $request->input('description'),
@@ -166,16 +176,9 @@ class TaskController extends Controller
             ]);
             $task->save();
             return response()->json(['status' => true, 'data' => 'tarea_guardada'], 200);
-        } catch (\Exception $e) {
+        } catch (\Exception $e) { //una validacion no esperada y se escribe en log
             Log::critical("No almaceno tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);        }
-    }
-
-    /*
-     * Verifica que si el usuario aun no esta en la base de datos, lo almacena
-     */
-    private function userVerification(Request $request){
-
     }
 
     /**
@@ -183,12 +186,12 @@ class TaskController extends Controller
      * del id de la tarea y del usuario
      **/
     public function close(Request $request){
-        if($request->id && $request->user_id){
+        if($request->id && $request->user_id){ //verifica que no sea null
             $task = Task::find($request->id);
-            if(!$task){
+            if(!$task){ //verifica si la tarea existe
                 return response()->json(['status' => false, 'data' =>'Tarea no existente'], 404);
             }
-            if($task->user_id!=$request->user_id){
+            if($task->user_id!=$request->user_id){ //verifica que el usuario de la tarea coincida con el de la peticion
                 return response()->json(['status' => false, 'data' =>'Usuario no coincide'], 404);
             }
             $task->update(['status' => 1]);
@@ -203,12 +206,12 @@ class TaskController extends Controller
      * del id de la tarea y del usuario
      **/
     public function open(Request $request){
-        if($request->id && $request->user_id){
+        if($request->id && $request->user_id){ //verifica que no sea null
             $task = Task::find($request->id);
-            if(!$task){
+            if(!$task){ //verifica si la tarea existe
                 return response()->json(['status' => false, 'data' => 'Tarea no existente'], 404);
             }
-            if($task->user_id!=$request->user_id){
+            if($task->user_id!=$request->user_id){  //verifica que el usuario de la tarea coincida con el de la peticion
                 return response()->json(['status' => false, 'data' => 'Usuario no coincide'], 404);
             }
             $task->update(['status' => 0]);
