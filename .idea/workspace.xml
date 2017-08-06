@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b0562015-a4b6-4ed5-920e-560cbccea016" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/User.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/composer.json" afterPath="$PROJECT_DIR$/pruebaTrabajo/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/database.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/routes/api.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/routes/api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Task.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/app/Task.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2017_08_05_120108_create_tasks_table.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2017_08_05_120108_create_tasks_table.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +31,8 @@
       <file leaf-file-name="Task.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="357">
+              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -45,8 +41,8 @@
       <file leaf-file-name="2017_08_05_120108_create_tasks_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pruebaTrabajo/database/migrations/2017_08_05_120108_create_tasks_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="67" />
+            <state relative-caret-position="306">
+              <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -55,9 +51,11 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="243">
+              <caret line="104" column="8" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="115" selection-end-column="9" />
+              <folding>
+                <element signature="e#40#53#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,20 +63,30 @@
       <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+            <state relative-caret-position="183">
+              <caret line="153" column="4" lean-forward="false" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
               <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
+                <element signature="e#40#74#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pruebaTrabajo/database/seeds/DatabaseSeeder.php">
+      <file leaf-file-name="validation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/validation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="283">
+              <caret line="106" column="61" lean-forward="false" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pruebaTrabajo/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -98,17 +106,7 @@
         <entry file="file://$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014_10_12_100000_create_password_resets_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -119,6 +117,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>charse</find>
+      <find>userVerification</find>
+      <find>make</find>
+      <find>unique</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,7 +135,6 @@
         <option value="$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/passwords.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/pruebaTrabajo/app/Task.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/config/database.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
@@ -142,10 +142,12 @@
         <option value="$PROJECT_DIR$/pruebaTrabajo/routes/api.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/composer.json" />
-        <option value="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2017_08_05_120108_create_tasks_table.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/app/User.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/pruebaTrabajo/app/Task.php" />
+        <option value="$PROJECT_DIR$/pruebaTrabajo/app/Http/Requests/TaskRequest.php" />
+        <option value="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2017_08_05_120108_create_tasks_table.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php" />
       </list>
     </option>
@@ -207,7 +209,7 @@
               <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Requests" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
@@ -228,6 +230,27 @@
               <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lang" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lang" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="es" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
@@ -278,12 +301,12 @@
       <workItem from="1501950893497" duration="213000" />
       <workItem from="1501951121646" duration="13000" />
       <workItem from="1501951143849" duration="1563000" />
-      <workItem from="1501953960325" duration="14408000" />
+      <workItem from="1501953960325" duration="25270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24803000" />
+    <option name="totallyTimeSpent" value="35665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -336,34 +359,6 @@
         <state relative-caret-position="323">
           <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/passwords.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/pagination.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/validation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -477,14 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -497,14 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/database/migrations/2017_08_05_120108_create_tasks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -535,36 +514,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="425">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="357">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/passwords.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="104" column="8" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="115" selection-end-column="9" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/database/migrations/2017_08_05_120108_create_tasks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Requests/TaskRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="106" column="61" lean-forward="false" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+        <state relative-caret-position="183">
+          <caret line="153" column="4" lean-forward="false" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#40#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

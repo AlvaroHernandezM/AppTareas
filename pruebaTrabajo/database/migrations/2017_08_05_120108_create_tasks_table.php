@@ -18,7 +18,7 @@ class CreateTasksTable extends Migration
             $table->engine = 'InnoDB';
 
             $table->increments('id');
-            $table->string('name',120);
+            $table->string('name',120)->unique();
             $table->boolean('status')->default(0);
             $table->string('description')->nullable();
             $table->bigInteger('user_id',false, true);

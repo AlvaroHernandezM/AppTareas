@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\TaskRequest;
 use Illuminate\Http\Request;
 use App\Task;
 use App\User;
@@ -32,37 +33,6 @@ class TaskController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //return $request->input();
-        $user = ($this->userVerification($request));
-
-        if (is_null($user)) { // Error con usuario
-            return response()->json( ( $this->userValidation( $request->input() ) ) );
-
-
-        }else {  // Todo bien con usuario
-            try {
-                $task = new Task([
-                    'name' => $request->input('name'),
-                    'description' => $request->input('description'),
-                    'user_id' => $request->input('user_id'),
-                ]);
-                $task->save();
-                return response()->json(['status' => true, 'correcto'], 200);
-            } catch (\Exception $e) {
-                Log::critical("No almaceno tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
-                return response('Something bad', 500);
-            }
-        }
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -70,7 +40,16 @@ class TaskController extends Controller
      */
     public function show($id)
     {
-        //
+        try{
+            $task = Task::find($id);
+            if(!$task){
+                return response()->json(['Tarea no existente'], 404);
+            }
+            return response()->json($task,200);
+        } catch (\Exception $e){
+            Log::critical("No mostro tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
+            return response('Something bad', 500);
+        }
     }
 
     /**
@@ -93,7 +72,18 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try{
+            $task = Task::find($id);
+            $task->update([
+                'name' => $request->input('name'),
+                'status' => $request->input('status'),
+                'description' => $request->input('description'),
+            ]);
+            return response()->json(['status' => true, 'actualizada'], 200);
+        } catch(\Exception $e){
+            Log::critical("No actualizo tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
+            return response('Something bad', 500);
+        }
     }
 
     /**
@@ -104,45 +94,76 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        //
-    }
-
-    public function userVerification(Request $request){
-
-        if ($this->validation($request->input()) == 1){
-
-            $user = User::find($request->user_id);
-
-            if (is_null($user)) { // No existe
-                $user = new User();
-                $user->id = $request->user_id;
-                $user->name = $request->user_name;
-                $user->email = $request->user_email;
-                $user->save();
+        try{
+            $task = Task::find($id);
+            if(!$task){
+                return response()->json(['Tarea no existente'], 404);
             }
-            return $user;
-
-        }else{
-            return null;
-        }
-
-    }
-
-    public function validation($task){
-        $rules = [
-            'name' => 'required',
-            'user_id' => 'required'
-        ];
-        $message = [
-            'required' => 'Error al validar la tarea'
-        ];
-        $validator = Validator::make($task, $rules, $message);
-        if ($validator->fails()) {
-            $errors = $validator->errors()->all();
-            return($errors);
-        }
-        else {
-            return 1;
+            $task->delete();
+            return response()->json("Tarea eliminada correctamente", 200);
+        } catch (\Exception $e){
+            Log::critical("No elimino tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
+            return response('Something bad', 500);
         }
     }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        try {
+            $rules = [
+                'name' => 'required|unique:tasks|max:120',
+                'user_id' => 'required',
+                'user_name' => 'required',
+                'user_email' => 'required',
+            ];
+
+            $messages = [
+                'name.unique' => 'No se puede repetir el nombre de una tarea',
+                'name.required' => 'Es requerido el nombre de la tarea',
+                'user_id.required' => 'Es requerido el id del usuario',
+                'user_name.required' => 'Es requerido el nombre del usuario',
+                'user_email.required' => 'Es requerido el correo del usuario',
+            ];
+
+            $validator = Validator::make($request->all(),$rules,$messages);
+
+            if ($validator->fails()) {
+                return response()->json(['status' => false, $validator->errors()], 404);
+            }
+
+            $this->userVerification($request);
+
+            $task = new Task([
+                'name' => $request->input('name'),
+                'description' => $request->input('description'),
+                'user_id' => $request->input('user_id'),
+            ]);
+            $task->save();
+            return response()->json(['status' => true, 'guardado'], 200);
+        } catch (\Exception $e) {
+            Log::critical("No almaceno tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
+            return response('Something bad', 500);
+        }
+    }
+    
+    /*
+     * Verifica que si el usuario aun no esta en la base de datos, lo almacena
+     */
+    private function userVerification(Request $request){
+        $user = User::find($request->user_id);
+        if (is_null($user)) { // No existe
+            $user = new User();
+            $user->id = $request->user_id;
+            $user->name = $request->user_name;
+            $user->email = $request->user_email;
+            $user->save();
+        }
+    }
+
 }
