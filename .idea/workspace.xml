@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0562015-a4b6-4ed5-920e-560cbccea016" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php" afterPath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php" />
-    </list>
+    <list default="true" id="b0562015-a4b6-4ed5-920e-560cbccea016" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,17 +15,17 @@
         <entry file="file://$PROJECT_DIR$/pruebaTrabajo/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-613">
-              <caret line="161" column="70" lean-forward="true" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
+              <caret line="161" column="70" lean-forward="false" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
               <folding>
                 <element signature="e#40#74#0#PHP" expanded="true" />
               </folding>
@@ -35,7 +33,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AplicacionFronted/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -77,6 +92,7 @@
         <option value="$PROJECT_DIR$/pruebaTrabajo/routes/api.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php" />
+        <option value="$PROJECT_DIR$/AplicacionFronted/index.html" />
       </list>
     </option>
   </component>
@@ -116,83 +132,12 @@
             <path>
               <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AplicacionFronted" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Requests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lang" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lang" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="es" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="pruebaLaravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pruebaLaravel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pruebaTrabajo" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -205,6 +150,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="E:/munDocente/MunDocente/munDocenteLaravel" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -238,12 +184,12 @@
       <workItem from="1501951121646" duration="13000" />
       <workItem from="1501951143849" duration="1563000" />
       <workItem from="1501953960325" duration="32056000" />
-      <workItem from="1502030301067" duration="4091000" />
+      <workItem from="1502030301067" duration="6214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46542000" />
+    <option name="totallyTimeSpent" value="48665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -286,7 +232,7 @@
         <state relative-caret-position="459">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#23#63#0#PHP" expanded="true" />
+            <element signature="e#23#63#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -489,7 +435,7 @@
         <state relative-caret-position="362">
           <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
+            <element signature="e#40#53#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,7 +469,7 @@
         <state relative-caret-position="253">
           <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
-            <element signature="e#23#63#0#PHP" expanded="true" />
+            <element signature="e#23#63#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -531,7 +477,7 @@
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -539,10 +485,18 @@
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-613">
-          <caret line="161" column="70" lean-forward="true" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
+          <caret line="161" column="70" lean-forward="false" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
           <folding>
             <element signature="e#40#74#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AplicacionFronted/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
