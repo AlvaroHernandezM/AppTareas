@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\TaskRequest;
 use Illuminate\Http\Request;
 use App\Task;
 use App\User;
@@ -98,7 +97,7 @@ class TaskController extends Controller
                     'status' => $request->input('status'),
                 ]);
             }
-            return response()->json(['status' => true, 'data' => 'actualizada'], 200);
+            return response()->json(['status' => true, 'data' => 'Tarea actualizada correctamente'], 200);
         } catch(\Exception $e){ //una validacion no esperada y se escribe en log
             Log::critical("No actualizo tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response(['status' => false, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);
@@ -175,7 +174,7 @@ class TaskController extends Controller
                 'user_id' => $request->input('user_id'),
             ]);
             $task->save();
-            return response()->json(['status' => true, 'data' => 'tarea_guardada'], 200);
+            return response()->json(['status' => true, 'data' => 'Tarea creada correctamente'], 200);
         } catch (\Exception $e) { //una validacion no esperada y se escribe en log
             Log::critical("No almaceno tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);        }
@@ -195,7 +194,7 @@ class TaskController extends Controller
                 return response()->json(['status' => false, 'data' =>'Usuario no coincide'], 404);
             }
             $task->update(['status' => 1]);
-            return response()->json(['status' => true, 'data' => 'tarea_cerrada'], 200);
+            return response()->json(['status' => true, 'data' => 'Tarea cerrada correctamente'], 200);
         } else {
             return response()->json(['status' => false, 'data' => 'Parametro incorrecto'],500);
         }
@@ -215,7 +214,7 @@ class TaskController extends Controller
                 return response()->json(['status' => false, 'data' => 'Usuario no coincide'], 404);
             }
             $task->update(['status' => 0]);
-            return response()->json(['status' => true, 'data' => 'Tarea abierta'], 200);
+            return response()->json(['status' => true, 'data' => 'Tarea abierta de nuevo'], 200);
         } else {
             return response()->json(['status' => false, 'data' => 'Parametro incorrecto'],500);
         }

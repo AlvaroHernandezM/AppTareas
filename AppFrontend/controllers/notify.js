@@ -24,7 +24,7 @@ $.showNotify = function($title, $text, $style, $position) {
     showAnimation: "show",
     showDuration: 0,
     hideDuration: 0,
-    autoHideDelay: 8000,
+    autoHideDelay: 5000,
     autoHide: true,
     clickToHide: true
   });
@@ -52,7 +52,7 @@ $.showConfirm = function($title, $text, $method, $parameterMethodY, $parameterMe
 
   $.notify({
     title: $title,
-    text: $text+'<div class="clearfix"></div><br><button onclick="'+$method+'('+$parameterMethodY+'); return false" class="notify__hidden">Sí</button> <button onclick="'+$method+'('+$parameterMethodN+'); return false" class="notify__hidden">No</button>',
+    text: $text+'<div class="clearfix"></div><br><button class="btn btn-success" onclick="'+$method+'('+$parameterMethodY+'); return false" class="notify__hidden">Sí</button> <button onclick="'+$method+'('+$parameterMethodN+'); return false" class="notify__hidden btn btn-danger">No</button>',
     image: "<i class='"+$icon+"'></i>"
   }, {
     style: 'metro',

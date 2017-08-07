@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Task;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
@@ -118,9 +119,10 @@ class UserController extends Controller
         }
     }
 
-    public function tasksOwner(){
+    public function tasksOwner($id){
         try{
-
+            $tasks = Task::where('user_id', $id)->get()->toArray();
+            return response()->json($tasks);
         } catch (\Exception $e){
             Log::critical("No encuentro mis tareas: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
             return response(['status' => true, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);
