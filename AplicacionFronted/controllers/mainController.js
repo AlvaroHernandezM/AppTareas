@@ -29,6 +29,7 @@ class MainController {
 // Pintado de tareas en la tabla
 // ###########################################################
     function setTasks(data) {
+        var numTask = 0;
         for (var i in data) {
             var task = data[i];
             var status = "Abierta";
@@ -36,8 +37,10 @@ class MainController {
               status = "Cerrada";
             }
             addTask(task, status);
+            numTask =+ 1;
         }
         initDataTable();
+        $.showNotify('Correcto', 'Se han cargado '+numTask+' tarea(s) existentes', 'success');
         $.hiddenLoading();
         return true;
     }

@@ -2,115 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0562015-a4b6-4ed5-920e-560cbccea016" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap/css/bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/.env.example" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Console/Kernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Exceptions/Handler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/Auth/ForgotPasswordController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/Auth/LoginController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/Auth/RegisterController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/Auth/ResetPasswordController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/HomeController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/UserController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Kernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Middleware/EncryptCookies.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Middleware/TrimStrings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Middleware/VerifyCsrfToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Http/Requests/TaskRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Providers/AppServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Providers/AuthServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Providers/BroadcastServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Providers/EventServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Providers/RouteServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/Task.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/app/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/artisan" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/bootstrap/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/bootstrap/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/bootstrap/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/broadcasting.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/filesystems.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/mail.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/queue.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/services.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/config/view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/factories/ModelFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/migrations/2017_08_05_120108_create_tasks_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/seeds/DatabaseSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/database/seeds/UsersTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/public/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/public/css/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/public/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/public/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/public/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/public/web.config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/assets/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/assets/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/assets/js/components/Example.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/assets/sass/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/assets/sass/app.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/lang/en/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/lang/en/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/lang/en/passwords.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/lang/en/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/passwords.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/lang/es/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/views/auth/login.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/views/auth/passwords/email.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/views/auth/passwords/reset.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/views/auth/register.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/views/home.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/views/layouts/app.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/resources/views/welcome.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/routes/api.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/routes/channels.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/routes/console.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/routes/web.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/server.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/storage/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/storage/app/public/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/storage/framework/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/storage/framework/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/storage/framework/sessions/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/storage/framework/testing/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/storage/framework/views/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/storage/logs/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/tests/CreatesApplication.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/tests/Feature/ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/tests/TestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/tests/Unit/ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pruebaTrabajo/webpack.mix.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionFronted/images/facebook.png" afterPath="$PROJECT_DIR$/AplicacionFronted/images/facebook.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js" afterPath="$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AplicacionFronted/index1.html" afterPath="$PROJECT_DIR$/AplicacionFronted/index1.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -121,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AplicacionFronted/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            <state relative-caret-position="285">
+              <caret line="71" column="18" lean-forward="true" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -173,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainController.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mainController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+            <state relative-caret-position="408">
+              <caret line="42" column="69" lean-forward="false" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -206,6 +100,7 @@
       <find>Tarea</find>
       <find>notify</find>
       <find>name</find>
+      <find>tareas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,8 +136,8 @@
         <option value="$PROJECT_DIR$/laravel/routes/api.php" />
         <option value="$PROJECT_DIR$/laravel/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/laravel/app/Http/Controllers/TaskController.php" />
-        <option value="$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js" />
         <option value="$PROJECT_DIR$/AplicacionFronted/index1.html" />
+        <option value="$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js" />
       </list>
     </option>
   </component>
@@ -363,12 +258,12 @@
       <workItem from="1501951143849" duration="1563000" />
       <workItem from="1501953960325" duration="32056000" />
       <workItem from="1502030301067" duration="8482000" />
-      <workItem from="1502049826356" duration="10563000" />
+      <workItem from="1502049826356" duration="12794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61496000" />
+    <option name="totallyTimeSpent" value="63727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -721,18 +616,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js">
+    <entry file="file://$PROJECT_DIR$/AplicacionFronted/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        <state relative-caret-position="285">
+          <caret line="71" column="18" lean-forward="true" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AplicacionFronted/index1.html">
+    <entry file="file://$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state relative-caret-position="408">
+          <caret line="42" column="69" lean-forward="false" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
           <folding />
         </state>
       </provider>

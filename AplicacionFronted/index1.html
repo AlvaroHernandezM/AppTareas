@@ -60,14 +60,28 @@
     <div class="container">
         <div class="btn-group btn-group-justified" role="group" aria-label="Acciones">
             <div class="btn-group " role="group">
-                <button type="button" class="btn btn-primary">Mis tareas</button>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseMyTasks" aria-expanded="false" aria-controls="collapseMyTasks">Mis tareas</button>
             </div>
             <div class="btn-group" role="group">
-                <button type="button" class="btn btn-success">Nueva tarea</button>
+                <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#collapseNewTask" aria-expanded="false" aria-controls="collapseNewTask">Nueva tarea</button>
+            </div>
+        </div>
+        <div class="collapse" id="collapseNewTask">
+            <div class="well">
+                Formualrio de nueva tarea aca
+            </div>
+        </div>
+        <div class="collapse" id="collapseMyTasks">
+            <div class="well">
+                Tabla con mis tareas aca
             </div>
         </div>
     </div>
 </div>
+
+
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="assets/js/jquery.js"></script>
