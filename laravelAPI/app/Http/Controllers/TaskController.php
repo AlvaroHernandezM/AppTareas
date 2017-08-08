@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Task;
 use App\User;
 use Illuminate\Support\Facades\Log;
@@ -18,7 +19,11 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = Task::all()->toArray();
+        //$tasks = Task::all()->toArray();
+        $tasks = DB::table('tasks')
+            ->orderBy('created_at', 'asc')
+            ->get()
+            ->toArray();
         return response()->json($tasks);
     }
 

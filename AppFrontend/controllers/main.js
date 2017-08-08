@@ -21,8 +21,6 @@ class Main {
 var myTableTask;
 var tableTasks;
 var userConnected;
-var userIdFacebook;
-var userNameFacebook;
 
 function  allTasks(isUpdate) {
     if(!isUpdate){
@@ -34,13 +32,10 @@ function  allTasks(isUpdate) {
         type: "GET",
         url: base + "tasks"
     }).done(function (data) {
-        //console.log(data);
         $.hiddenLoading();
         setTasks(data, false, isUpdate);
     }).fail(function (data) {
-        //alert("error");
         $.showNotify('Error', data.responseText, 'error');
-        //console.log(data);
     });
 }
 
@@ -332,15 +327,15 @@ function destroyDataTableTasks(){
 /*
 funcionalidad del boton cargar mis tareas
  */
-function myTasks(){
+function myTasks() {
     //$("#button_myTasks").css("display", "none");
     $.showLoading("Conectando con Facebook...");
     $.showNotify('Ayuda', "Debes estar atento a la notificación generada por el navegador para activar ventanas emergentes", 'info');
-    FB.getLoginStatus(function(response) {
+    FB.getLoginStatus(function (response) {
         loginStatusVerificate(response, false);
     });
-
 }
+
 /*
 obteniendo las tareas d eun usuario conectado
  */
@@ -365,7 +360,10 @@ function getMyTasks(){
 function initDataTableMyTasks(){
     myTableTask = $('#myTableTasks').dataTable({
         "language": getLanguage(),
-        'destroy':true
+        'destroy':true,
+      /*  "columDefs": [{
+            "targets" :
+        }] */
     });
     //myTableTask.dataTable.ext.errMode = 'none';
 }
