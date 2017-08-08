@@ -15,7 +15,6 @@ class Main {
 // ###########################################################
     initData() {
         allTasks();
-        myTasks();
     }
 }
 
@@ -46,7 +45,7 @@ function  allTasks() {
 // ###########################################################
 // Extraccion de datos del usuario de la cuenta de facebook
 // ###########################################################
-function loginStatusVerificate(response){
+function loginStatusVerificate(response, confirmSend){
     if(response.status != 'conected'){
         FB.login(function(response) {
             if(response.status = 'connected'){
@@ -67,8 +66,11 @@ function loginStatusVerificate(response){
                         console.log(user);
                         userConnected = user;
                         $.hiddenLoading();
-                        sendTask();
-                        return user;
+                        if(confirmSend){
+                            sendTask();
+                        } else {
+                            getMyTasks();
+                        }
                     }else{
                         $.showNotify('Error', 'Error obtener datos de usuario desde facebook. Intente de nuevo', 'error');
                     }
@@ -151,13 +153,26 @@ function sendTask(){
             numTask += 1;
         }
         if(isMyTask){
-            $.showNotify('Correcto', 'Se ha cargado '+numTask+' tarea(s) existente(s)', 'success');
-            destroyDataTableMyTasks();
-            initDataTableMyTasks();
+            try {
+                destroyDataTableMyTasks();
+                initDataTableMyTasks();
+            }
+            catch(err) {
+                initDataTableMyTasks();
+                console.log(err.message)
+            }
         } else {
-            destroyDataTableTasks();
-            initDataTableTasks();
+
+            try {
+                destroyDataTableTasks();
+                initDataTableTasks();
+            }
+            catch(err) {
+                initDataTableTasks();
+                console.log(err.message)
+            }
         }
+        $.showNotify('Correcto', 'Se ha cargado '+numTask+' tarea(s) existente(s)', 'success');
         return true;
     }
 
@@ -184,7 +199,7 @@ function addMyTask(task, status) {
             '<td>'+status+'</td>'+
             '<td>'+task.created_at+'</td>'+
             '<td>'+task.updated_at+'</td>'+
-            '<td class="text-center"><button type="button" class="btn btn-success" onclick="closeMyTask('+task.id+','+task.user_id+'); return false"><i class="glyphicon glyphicon-ok-circle"></i></button> <a href="editMyTask/' + task.id + '"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-edit"></i></button></a>' +
+            '<td class="text-center"><button type="button" class="btn btn-success" onclick="closeMyTask('+task.id+'); return false"><i class="glyphicon glyphicon-ok-circle"></i></button> <a href="editMyTask/' + task.id + '"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-edit"></i></button></a>' +
             ' <button type="button" class="btn btn-danger" onclick="confirmDelete('+task.id+'); return false"><i class="glyphicon glyphicon-remove-circle"></i></button></td>'+
             '</tr>');
     } else{
@@ -193,7 +208,7 @@ function addMyTask(task, status) {
             '<td>'+status+'</td>'+
             '<td>'+task.created_at+'</td>'+
             '<td>'+task.updated_at+'</td>'+
-            '<td class="text-center"><button type="button" class="btn btn-primary" onclick="openMyTask('+task.id+','+task.user_id+'); return false"><i class="glyphicon glyphicon-repeat"></i></button> <button type="button" class="btn btn-danger" onclick="confirmDelete('+task.id+'); return false"><i class="glyphicon glyphicon-remove-circle"></i></button></td>'+
+            '<td class="text-center"><button type="button" class="btn btn-primary" onclick="openMyTask('+task.id+'); return false"><i class="glyphicon glyphicon-repeat"></i></button> <button type="button" class="btn btn-danger" onclick="confirmDelete('+task.id+'); return false"><i class="glyphicon glyphicon-remove-circle"></i></button></td>'+
             '</tr>');
     }
 }
@@ -203,24 +218,24 @@ function newTask(){
     $.showLoading("Conectando con Facebook...");
     $.showNotify('Ayuda', "Debes estar atento a la notificación generada por el navegador para activar ventanas emergentes", 'info');
     FB.getLoginStatus(function(response) {
-        loginStatusVerificate(response);
+        loginStatusVerificate(response, true);
     });
 
 
 
 }
 
-function closeMyTask(id, user_id){
+function closeMyTask(id){
     $.showLoading("Cerrando tarea");
     $.ajax({
         type: "POST",
         url: base + "tasks/" +id+"/close",
-        data: {'user_id' : user_id}
+        data: {'user_id' : userConnected.id}
     }).done(function (data) {
         //console.log(data);
         $.hiddenLoading();
         $.showNotify('Correcto', data.data, 'success');
-        myTasks();
+        getMyTasks();
         allTasks();
     }).fail(function (data) {
         //alert("error");
@@ -229,17 +244,17 @@ function closeMyTask(id, user_id){
     });
 }
 
-function openMyTask(id, user_id){
+function openMyTask(id){
     $.showLoading("Re abriendo tarea");
     $.ajax({
         type: "POST",
         url: base + "tasks/" +id+"/open",
-        data: {'user_id' : user_id}
+        data: {'user_id' : userConnected.id}
     }).done(function (data) {
         //console.log(data);
         $.hiddenLoading();
         $.showNotify('Correcto', data.data, 'success');
-        myTasks();
+        getMyTasks();
         allTasks();
     }).fail(function (data) {
         //alert("error");
@@ -258,7 +273,7 @@ function removeTask(id){
         $.ajax({
             dataType: "json",
             type: "DELETE",
-            url: base + "tasks/" + id
+            url: base + "tasks/" + id,
         }).done(function (data) {
             //console.log(data);
             $.hiddenLoading();
@@ -283,6 +298,8 @@ function initDataTableTasks(){
     tableTasks = $('#tableTasks').dataTable({
         "language": getLanguage()
     });
+    tableTasks.dataTable.ext.errMode = 'none';
+
 }
 
 function destroyDataTableTasks(){
@@ -292,11 +309,19 @@ function destroyDataTableTasks(){
 function myTasks(){
     $("#button_myTasks").css("display", "none");
     //$.showLoading("Cargando mis tareas");
+    $.showLoading("Conectando con Facebook...");
+    $.showNotify('Ayuda', "Debes estar atento a la notificación generada por el navegador para activar ventanas emergentes", 'info');
+    FB.getLoginStatus(function(response) {
+        loginStatusVerificate(response, false);
+    });
 
+}
+
+function getMyTasks(){
     $.ajax({
         dataType: "json",
         type: "GET",
-        url: base + "users/"+12345678333+"/tasks"
+        url: base + "users/"+userConnected.id+"/tasks"
     }).done(function (data) {
         //console.log(data);
         $.hiddenLoading();
@@ -309,6 +334,7 @@ function myTasks(){
 }
 
 
+
 // ###########################################################
 // Metodo que carga DataTable y en Espanol
 // ###########################################################
@@ -316,6 +342,7 @@ function initDataTableMyTasks(){
     myTableTask = $('#myTableTasks').dataTable({
         "language": getLanguage()
     });
+    myTableTask.dataTable.ext.errMode = 'none';
 }
 
 // ###########################################################
@@ -323,6 +350,7 @@ function initDataTableMyTasks(){
 // ###########################################################
 function destroyDataTableMyTasks(){
     myTableTask.destroy();
+
 }
 
 

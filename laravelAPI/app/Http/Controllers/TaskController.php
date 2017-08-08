@@ -79,14 +79,17 @@ class TaskController extends Controller
             if($task->user_id!=$request->user_id){ //verifica que coincide el usuario
                 return response()->json(['status' => false, 'data' =>'Usuario no coincide'], 404);
             }
-            $taskEqualName = Task::where('name',$request->input('name'))->first();
-            if($taskEqualName->name == $task->name){ //verifica que no exista otra tarea con ese nombre
-                $task->update([
-                    'name' => $request->input('name'),
-                ]);
-            } else {
-               return response()->json(['status' => false, 'data' =>'Otra tarea ya tiene este nombre'], 404);
+            if(!is_null($request->input('name'))){
+                $taskEqualName = Task::where('name',$request->input('name'))->first();
+                if($taskEqualName->name == $task->name){ //verifica que no exista otra tarea con ese nombre
+                    $task->update([
+                        'name' => $request->input('name'),
+                    ]);
+                } else {
+                    return response()->json(['status' => false, 'data' =>'Otra tarea ya tiene este nombre'], 404);
+                }
             }
+
             if(!is_null($request->input('description'))){ //verifica si se envio la descripcion para actualizar
                 $task->update([
                     'description' => $request->input('description'),

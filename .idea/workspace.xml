@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0562015-a4b6-4ed5-920e-560cbccea016" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AppFrontend/controllers/mainController.js" afterPath="$PROJECT_DIR$/AppFrontend/controllers/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AppFrontend/index1.html" afterPath="$PROJECT_DIR$/AppFrontend/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppFrontend/controllers/notify.js" afterPath="$PROJECT_DIR$/AppFrontend/controllers/notify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppFrontend/controllers/main.js" afterPath="$PROJECT_DIR$/AppFrontend/controllers/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" afterPath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +18,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AppFrontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="111" column="81" lean-forward="false" selection-start-line="111" selection-start-column="81" selection-end-line="111" selection-end-column="81" />
+            <state relative-caret-position="102">
+              <caret line="141" column="22" lean-forward="false" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -32,8 +28,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="298" column="40" lean-forward="false" selection-start-line="298" selection-start-column="29" selection-end-line="298" selection-end-column="40" />
+            <state relative-caret-position="283">
+              <caret line="300" column="14" lean-forward="false" selection-start-line="300" selection-start-column="14" selection-end-line="300" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -42,8 +38,8 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravelAPI/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="527">
+              <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -52,7 +48,7 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="-994">
               <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
@@ -64,8 +60,8 @@
       <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="149" column="60" lean-forward="false" selection-start-line="149" selection-start-column="60" selection-end-line="149" selection-end-column="60" />
+            <state relative-caret-position="-1802">
+              <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -104,16 +100,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>name</find>
-      <find>tareas</find>
-      <find>enviar cons</find>
-      <find>myTabe</find>
-      <find>editar</find>
       <find>edi</find>
       <find>delete</find>
       <find>se debe re</find>
       <find>newTaskAction</find>
-      <find>myTasks</find>
       <find>destroyDataTableMyTasks</find>
       <find>initDataTableMyTasks</find>
       <find>destro</find>
@@ -133,7 +123,13 @@
       <find>jqu</find>
       <find>sendTask</find>
       <find>loginStatusVerificate</find>
+      <find>myTask</find>
+      <find>myTasks</find>
+      <find>POST</find>
       <find>newTask</find>
+      <find>getMyTasks</find>
+      <find>open</find>
+      <find>MyTas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,10 +171,10 @@
         <option value="$PROJECT_DIR$/AppFrontend/controllers/mainController.js" />
         <option value="$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" />
-        <option value="$PROJECT_DIR$/laravelAPI/routes/api.php" />
         <option value="$PROJECT_DIR$/AppFrontend/controllers/notify.js" />
         <option value="$PROJECT_DIR$/AppFrontend/assets/js/jquery.js" />
+        <option value="$PROJECT_DIR$/laravelAPI/routes/api.php" />
+        <option value="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/AppFrontend/index.html" />
         <option value="$PROJECT_DIR$/AppFrontend/controllers/main.js" />
       </list>
@@ -243,6 +239,14 @@
               <item name="AppFrontend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppFrontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jquery.dataTables.js" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
@@ -344,12 +348,12 @@
       <workItem from="1502030301067" duration="8482000" />
       <workItem from="1502049826356" duration="12912000" />
       <workItem from="1502113277828" duration="13930000" />
-      <workItem from="1502143192401" duration="16762000" />
+      <workItem from="1502143192401" duration="19129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94537000" />
+    <option name="totallyTimeSpent" value="96904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="40" width="1641" height="986" extended-state="0" />
@@ -388,7 +392,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Task.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/server.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/config/auth.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/config/broadcasting.php" />
@@ -453,14 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravelAPI/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/notify.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -474,32 +469,14 @@
         <state relative-caret-position="85">
           <caret line="1" column="661" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1179" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AppFrontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="111" column="81" lean-forward="false" selection-start-line="111" selection-start-column="81" selection-end-line="111" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="149" column="60" lean-forward="false" selection-start-line="149" selection-start-column="60" selection-end-line="149" selection-end-column="60" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="-994">
           <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
@@ -507,10 +484,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1802">
+          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravelAPI/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/assets/js/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="80" column="122" lean-forward="false" selection-start-line="80" selection-start-column="118" selection-end-line="80" selection-end-column="122" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="141" column="22" lean-forward="false" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="298" column="40" lean-forward="false" selection-start-line="298" selection-start-column="29" selection-end-line="298" selection-end-column="40" />
+        <state relative-caret-position="283">
+          <caret line="300" column="14" lean-forward="false" selection-start-line="300" selection-start-column="14" selection-end-line="300" selection-end-column="14" />
           <folding />
         </state>
       </provider>
