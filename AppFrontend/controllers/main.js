@@ -1,6 +1,6 @@
 var base = "http://localhost/AppTareas/laravelAPI/public/api/"
 
-class MainController {
+class Main {
 
     constructor() {
         this.initData();
@@ -9,31 +9,134 @@ class MainController {
         $("#user_email").css("display", "none");
     }
 
+
 // ###########################################################
 // Metodo que carga las tareas al abrir index
 // ###########################################################
     initData() {
-        $.showLoading("Cargando tareas");
-        $.ajax({
-            dataType: "json",
-            type: "GET",
-            url: base + "tasks"
-        }).done(function (data) {
-            //console.log(data);
-            $.hiddenLoading();
-            setTasks(data, false);
-        }).fail(function (data) {
-            //alert("error");
-            $.showNotify('Error', data.data, 'error');
-            //console.log(data);
-        });
+        allTasks();
+        myTasks();
     }
 }
+
+var myTableTask;
+var tableTasks;
+var userConnected;
+var userIdFacebook;
+var userNameFacebook;
+
+function  allTasks() {
+    $.showLoading("Cargando tareas");
+    $.ajax({
+        dataType: "json",
+        headers: {"Content-Type": "application/json"},
+        type: "GET",
+        url: base + "tasks"
+    }).done(function (data) {
+        //console.log(data);
+        $.hiddenLoading();
+        setTasks(data, false);
+    }).fail(function (data) {
+        //alert("error");
+        $.showNotify('Error', data.data, 'error');
+        //console.log(data);
+    });
+}
+
+// ###########################################################
+// Extraccion de datos del usuario de la cuenta de facebook
+// ###########################################################
+function loginStatusVerificate(response){
+    if(response.status != 'conected'){
+        FB.login(function(response) {
+            if(response.status = 'connected'){
+                FB.api('/me?fields=id,name,email', function(response) {
+                    if(response.id != ''){
+                        $.hiddenLoading();
+                        $.showNotify('Estado', 'Contectado con Facebook', 'success');
+                        console.log(response);
+                        user = {
+                            'id' : response.id,
+                            'name' : response.name,
+                            'email' : ''
+
+                        }
+                        if(!response.email){
+                            user.email = 'nnnn@gmail.com';
+                        }
+                        console.log(user);
+                        userConnected = user;
+                        $.hiddenLoading();
+                        sendTask();
+                        return user;
+                    }else{
+                        $.showNotify('Error', 'Error obtener datos de usuario desde facebook. Intente de nuevo', 'error');
+                    }
+                });
+            }else{
+                $.showNotify('Error', 'Error al iniciar sesión con facebook', 'error');
+            }
+        });
+    }else{
+        $.showNotify('Error', 'No se pudo conectar con facebook', 'error');
+    }
+}
+
+function sendTask(){
+    if(!userConnected.email){
+        userConnected.email = "nnnn@gnail.com"
+    }
+    console.log(userConnected.id + " - " +  userConnected.name + " - " + userConnected.email );
+    console.log(userConnected);
+    //$.showLoading('Enviando usuario de Facebook');
+    //$("#user_id").val(userConnected.id);
+    //$("#user_name").val(userConnected.name);
+    //$("#user_email").val(userConnected.email);
+    //userNew = new FormData($("#new")[0]);
+    $.showLoading("Enviando nueva tarea...")
+    var task = {};
+    task.name = $("#name").val();
+    task.description = $("#description").val();
+    $("#user_name").val(userConnected.name);
+    $("#user_email").val(userConnected.email);
+    $("#user_id").val(userConnected.id);
+    taskNew = new FormData($("#newTask")[0]);
+    console.log(taskNew);
+    console.log(userConnected);
+    //console.log(userNew);
+    $.ajax({
+        type: "POST",
+        url: base + "tasks",
+        data : taskNew,
+        contentType: false,
+        processData: false
+    }).done(function (data) {
+        //console.log(data);
+        $.hiddenLoading();
+        $.showNotify('Correcto', data.data, 'success');
+        console.log(data);
+        allTasks();
+        myTasks();
+        $("#name").val('');
+        $("#description").val('');
+    }).fail(function (data) {
+        //alert("error");
+        $.showNotify('Error', data.data, 'error');
+        console.log(data);
+    });
+
+}
+
 // ###########################################################
 // Pintado de tareas en la tabla
 // ###########################################################
     function setTasks(data, isMyTask) {
         var numTask = 0;
+        if(isMyTask){
+            $("#myTableTasks > tbody").html("");
+        } else {
+            $("#tableTasks > tbody").html("");
+        }
         for (var i in data) {
             var task = data[i];
             var status = "Abierta";
@@ -48,11 +151,13 @@ class MainController {
             numTask += 1;
         }
         if(isMyTask){
+            $.showNotify('Correcto', 'Se ha cargado '+numTask+' tarea(s) existente(s)', 'success');
+            destroyDataTableMyTasks();
             initDataTableMyTasks();
         } else {
+            destroyDataTableTasks();
             initDataTableTasks();
         }
-        $.showNotify('Correcto', 'Se han cargado '+numTask+' tarea(s) existente(s)', 'success');
         return true;
     }
 
@@ -88,18 +193,21 @@ function addMyTask(task, status) {
             '<td>'+status+'</td>'+
             '<td>'+task.created_at+'</td>'+
             '<td>'+task.updated_at+'</td>'+
-            '<td class="text-center"><button type="button" class="btn btn-success" onclick="openMyTask('+task.id+','+task.user_id+'); return false"><i class="glyphicon glyphicon-ok-circle"></i></button> <button type="button" class="btn btn-danger" onclick="confirmDelete('+task.id+'); return false"><i class="glyphicon glyphicon-remove-circle"></i></button></td>'+
+            '<td class="text-center"><button type="button" class="btn btn-primary" onclick="openMyTask('+task.id+','+task.user_id+'); return false"><i class="glyphicon glyphicon-repeat"></i></button> <button type="button" class="btn btn-danger" onclick="confirmDelete('+task.id+'); return false"><i class="glyphicon glyphicon-remove-circle"></i></button></td>'+
             '</tr>');
     }
 }
 
 function newTask(){
-    $.showLoading("Enviando nueva tarea...")
-    var task = {};
-    task.name = $('#name').val();
-    task.description = $('#description').val();
-    task = new FormData($("#newTask")[0]);
-    console.log(task);
+
+    $.showLoading("Conectando con Facebook...");
+    $.showNotify('Ayuda', "Debes estar atento a la notificación generada por el navegador para activar ventanas emergentes", 'info');
+    FB.getLoginStatus(function(response) {
+        loginStatusVerificate(response);
+    });
+
+
+
 }
 
 function closeMyTask(id, user_id){
@@ -112,6 +220,8 @@ function closeMyTask(id, user_id){
         //console.log(data);
         $.hiddenLoading();
         $.showNotify('Correcto', data.data, 'success');
+        myTasks();
+        allTasks();
     }).fail(function (data) {
         //alert("error");
         $.showNotify('Error', data.data, 'error');
@@ -130,6 +240,7 @@ function openMyTask(id, user_id){
         $.hiddenLoading();
         $.showNotify('Correcto', data.data, 'success');
         myTasks();
+        allTasks();
     }).fail(function (data) {
         //alert("error");
         $.showNotify('Error', data.data, 'error');
@@ -152,7 +263,8 @@ function removeTask(id){
             //console.log(data);
             $.hiddenLoading();
             $.showNotify('Correcto', data.data, 'success');
-            console.log("se debe recargar parte de la pagina");
+            myTasks();
+            allTasks();
         }).fail(function (data) {
             //alert("error");
             $.showNotify('Error', data.data, 'error');
@@ -168,18 +280,23 @@ function removeTask(id){
 // Metodo que carga DataTable y en Espanol
 // ###########################################################
 function initDataTableTasks(){
-    $('#tableTasks').dataTable({
+    tableTasks = $('#tableTasks').dataTable({
         "language": getLanguage()
     });
 }
 
+function destroyDataTableTasks(){
+    tableTasks.destroy();
+}
+
 function myTasks(){
     $("#button_myTasks").css("display", "none");
-    $.showLoading("Cargando mis tareas");
+    //$.showLoading("Cargando mis tareas");
+
     $.ajax({
         dataType: "json",
         type: "GET",
-        url: base + "users/77832178327381/tasks"
+        url: base + "users/"+12345678333+"/tasks"
     }).done(function (data) {
         //console.log(data);
         $.hiddenLoading();
@@ -196,10 +313,18 @@ function myTasks(){
 // Metodo que carga DataTable y en Espanol
 // ###########################################################
 function initDataTableMyTasks(){
-    $('#myTableTasks').dataTable({
+    myTableTask = $('#myTableTasks').dataTable({
         "language": getLanguage()
     });
 }
+
+// ###########################################################
+// Metodo que borrar un Datatable antiguo
+// ###########################################################
+function destroyDataTableMyTasks(){
+    myTableTask.destroy();
+}
+
 
 function getLanguage(){
     return language = {
@@ -228,4 +353,4 @@ function getLanguage(){
     }
 }
 
-var controller = new MainController();
+var controller = new Main();

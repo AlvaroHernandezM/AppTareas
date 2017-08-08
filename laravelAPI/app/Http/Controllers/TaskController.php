@@ -121,7 +121,8 @@ class TaskController extends Controller
             return response()->json(['status' => 'success', 'data' =>"Tarea eliminada correctamente"], 200);
         } catch (\Exception $e){ //una validacion no esperada y se escribe en log
             Log::critical("No elimino tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
-            return response(['status' => false, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);        }
+            return response(['status' => false, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);
+        }
     }
 
     /**
@@ -137,7 +138,6 @@ class TaskController extends Controller
                 'name' => 'required|unique:tasks|max:120',
                 'user_id' => 'required',
                 'user_name' => 'required',
-                'user_email' => 'required',
             ];
 
             $messages = [
@@ -145,7 +145,6 @@ class TaskController extends Controller
                 'name.required' => 'Es requerido el nombre de la tarea',
                 'user_id.required' => 'Es requerido el id del usuario',
                 'user_name.required' => 'Es requerido el nombre del usuario',
-                'user_email.required' => 'Es requerido el correo del usuario',
             ];
 
             $validator = Validator::make($request->all(),$rules,$messages);
@@ -185,19 +184,26 @@ class TaskController extends Controller
      * del id de la tarea y del usuario
      **/
     public function close(Request $request){
-        if($request->id && $request->user_id){ //verifica que no sea null
-            $task = Task::find($request->id);
-            if(!$task){ //verifica si la tarea existe
-                return response()->json(['status' => false, 'data' =>'Tarea no existente'], 404);
+        try{
+            if($request->id && $request->user_id){ //verifica que no sea null
+                $task = Task::find($request->id);
+                if(!$task){ //verifica si la tarea existe
+                    return response()->json(['status' => false, 'data' =>'Tarea no existente'], 404);
+                }
+                if($task->user_id!=$request->user_id){ //verifica que el usuario de la tarea coincida con el de la peticion
+                    return response()->json(['status' => false, 'data' =>'Usuario no coincide'], 404);
+                }
+                $task->update(['status' => 1]);
+                return response()->json(['status' => true, 'data' => 'Tarea cerrada correctamente'], 200);
+            } else {
+                return response()->json(['status' => false, 'data' => 'Parametro incorrecto'],500);
             }
-            if($task->user_id!=$request->user_id){ //verifica que el usuario de la tarea coincida con el de la peticion
-                return response()->json(['status' => false, 'data' =>'Usuario no coincide'], 404);
-            }
-            $task->update(['status' => 1]);
-            return response()->json(['status' => true, 'data' => 'Tarea cerrada correctamente'], 200);
-        } else {
-            return response()->json(['status' => false, 'data' => 'Parametro incorrecto'],500);
+        }  catch (\Exception $e){
+            Log::critical("No cerro tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
+            return response(['status' => false, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);
         }
+
+
     }
 
     /**
@@ -205,18 +211,24 @@ class TaskController extends Controller
      * del id de la tarea y del usuario
      **/
     public function open(Request $request){
-        if($request->id && $request->user_id){ //verifica que no sea null
-            $task = Task::find($request->id);
-            if(!$task){ //verifica si la tarea existe
-                return response()->json(['status' => false, 'data' => 'Tarea no existente'], 404);
+        try{
+            if($request->id && $request->user_id){ //verifica que no sea null
+                $task = Task::find($request->id);
+                if(!$task){ //verifica si la tarea existe
+                    return response()->json(['status' => false, 'data' => 'Tarea no existente'], 404);
+                }
+                if($task->user_id!=$request->user_id){  //verifica que el usuario de la tarea coincida con el de la peticion
+                    return response()->json(['status' => false, 'data' => 'Usuario no coincide'], 404);
+                }
+                $task->update(['status' => 0]);
+                return response()->json(['status' => true, 'data' => 'Tarea abierta de nuevo'], 200);
+            } else {
+                Log::critical("No almaceno tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
+                return response()->json(['status' => false, 'data' => 'Parametro incorrecto'],500);
             }
-            if($task->user_id!=$request->user_id){  //verifica que el usuario de la tarea coincida con el de la peticion
-                return response()->json(['status' => false, 'data' => 'Usuario no coincide'], 404);
-            }
-            $task->update(['status' => 0]);
-            return response()->json(['status' => true, 'data' => 'Tarea abierta de nuevo'], 200);
-        } else {
-            return response()->json(['status' => false, 'data' => 'Parametro incorrecto'],500);
+        } catch (\Exception $e){
+            Log::critical("No re abrio tarea: {$e->getCode()} , {$e->getLine()}, {$e->getMessage()}");
+            return response(['status' => false, 'data' => 'Algo salio mal, contactarse con Administrador'], 500);
         }
     }
 }

@@ -2,170 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0562015-a4b6-4ed5-920e-560cbccea016" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.material.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.material.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.uikit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/dataTables.uikit.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/jquery.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/jquery.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/css/jquery.dataTables_themeroller.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/images/Sorting icons.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/images/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/images/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/images/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/images/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/images/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.bootstrap4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.bootstrap4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.jqueryui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.jqueryui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.material.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.semanticui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.semanticui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.uikit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/dataTables.uikit.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/jquery.dataTables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/notify/notify-metro.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/notify/notify-metro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/assets/notify/notify.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/controllers/notify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/images/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AplicacionFronted/index1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/.env.example" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Console/Kernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Exceptions/Handler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/ForgotPasswordController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/LoginController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/ResetPasswordController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/HomeController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/TaskController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/UserController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Kernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Middleware/EncryptCookies.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Middleware/TrimStrings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Middleware/VerifyCsrfToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Http/Requests/TaskRequest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Providers/AppServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Providers/AuthServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Providers/BroadcastServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Providers/EventServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Providers/RouteServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/Task.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/app/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/artisan" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/bootstrap/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/bootstrap/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/bootstrap/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/broadcasting.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/filesystems.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/mail.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/queue.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/services.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/config/view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/database/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/database/factories/ModelFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/database/migrations/2017_08_05_120108_create_tasks_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/database/seeds/DatabaseSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/database/seeds/UsersTableSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/public/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/public/css/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/public/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/public/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/public/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/public/web.config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/assets/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/assets/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/assets/js/components/Example.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/assets/sass/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/assets/sass/app.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/lang/en/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/lang/en/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/lang/en/passwords.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/lang/en/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/lang/es/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/lang/es/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/lang/es/passwords.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/lang/es/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/views/auth/login.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/views/auth/passwords/email.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/views/auth/passwords/reset.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/views/auth/register.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/views/home.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/resources/views/welcome.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/routes/api.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/routes/channels.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/routes/console.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/routes/web.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/server.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/storage/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/storage/app/public/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/storage/framework/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/storage/framework/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/storage/framework/sessions/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/storage/framework/testing/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/storage/framework/views/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/storage/logs/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/tests/CreatesApplication.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/tests/Feature/ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/tests/TestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/tests/Unit/ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/laravel/webpack.mix.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pruebaLaravel.iml" afterPath="$PROJECT_DIR$/.idea/pruebaLaravel.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AppFrontend/controllers/mainController.js" afterPath="$PROJECT_DIR$/AppFrontend/controllers/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AppFrontend/index1.html" afterPath="$PROJECT_DIR$/AppFrontend/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppFrontend/controllers/notify.js" afterPath="$PROJECT_DIR$/AppFrontend/controllers/notify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" afterPath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -176,31 +19,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mainController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/mainController.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppFrontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+            <state relative-caret-position="538">
+              <caret line="111" column="81" lean-forward="false" selection-start-line="111" selection-start-column="81" selection-end-line="111" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notify.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/notify.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="385">
+              <caret line="298" column="40" lean-forward="false" selection-start-line="298" selection-start-column="29" selection-end-line="298" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AppFrontend/index1.html">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravelAPI/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+            <state relative-caret-position="493">
+              <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -209,10 +52,10 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
-              <caret line="128" column="9" lean-forward="false" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+            <state relative-caret-position="332">
+              <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
               <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
+                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,8 +64,8 @@
       <file leaf-file-name="TaskController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="213" column="48" lean-forward="true" selection-start-line="213" selection-start-column="48" selection-end-line="213" selection-end-column="48" />
+            <state relative-caret-position="391">
+              <caret line="149" column="60" lean-forward="false" selection-start-line="149" selection-start-column="60" selection-end-line="149" selection-end-column="60" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -230,11 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravelAPI/routes/api.php">
+      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="340">
+              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/laravelAPI/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -251,36 +104,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>charse</find>
-      <find>userVerification</find>
-      <find>make</find>
-      <find>unique</find>
-      <find>Task::find</find>
-      <find>Log::</find>
-      <find>No almace</find>
-      <find>Where</find>
-      <find>where</find>
-      <find>Tarea</find>
-      <find>notify</find>
       <find>name</find>
       <find>tareas</find>
       <find>enviar cons</find>
       <find>myTabe</find>
-      <find>cargar</find>
       <find>editar</find>
-      <find>initDataTableMyTasks</find>
       <find>edi</find>
       <find>delete</find>
-      <find>myTasks</find>
       <find>se debe re</find>
       <find>newTaskAction</find>
+      <find>myTasks</find>
+      <find>destroyDataTableMyTasks</find>
+      <find>initDataTableMyTasks</find>
+      <find>destro</find>
+      <find>mainContr</find>
+      <find>mytask</find>
+      <find>jquer</find>
+      <find>.aja</find>
+      <find>Se han car</find>
+      <find>cargar</find>
+      <find>css</find>
+      <find>user_id</find>
+      <find>showlo</find>
+      <find>showno</find>
+      <find>Er</find>
+      <find>onsu</find>
+      <find>error</find>
+      <find>jqu</find>
+      <find>sendTask</find>
+      <find>loginStatusVerificate</find>
+      <find>newTask</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -314,12 +171,16 @@
         <option value="$PROJECT_DIR$/laravel/app/Http/Controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/AplicacionFronted/index1.html" />
         <option value="$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js" />
-        <option value="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/laravelAPI/routes/api.php" />
-        <option value="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" />
-        <option value="$PROJECT_DIR$/AppFrontend/controllers/notify.js" />
         <option value="$PROJECT_DIR$/AppFrontend/index1.html" />
         <option value="$PROJECT_DIR$/AppFrontend/controllers/mainController.js" />
+        <option value="$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" />
+        <option value="$PROJECT_DIR$/laravelAPI/routes/api.php" />
+        <option value="$PROJECT_DIR$/AppFrontend/controllers/notify.js" />
+        <option value="$PROJECT_DIR$/AppFrontend/assets/js/jquery.js" />
+        <option value="$PROJECT_DIR$/AppFrontend/index.html" />
+        <option value="$PROJECT_DIR$/AppFrontend/controllers/main.js" />
       </list>
     </option>
   </component>
@@ -337,9 +198,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="40" />
+    <option name="width" value="1641" />
+    <option name="height" value="986" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -356,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -368,6 +230,19 @@
               <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppFrontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppFrontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppFrontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
@@ -405,12 +280,26 @@
               <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="laravelAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="laravelAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="laravelAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -454,32 +343,33 @@
       <workItem from="1501953960325" duration="32056000" />
       <workItem from="1502030301067" duration="8482000" />
       <workItem from="1502049826356" duration="12912000" />
-      <workItem from="1502113277828" duration="13771000" />
+      <workItem from="1502113277828" duration="13930000" />
+      <workItem from="1502143192401" duration="16762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77616000" />
+    <option name="totallyTimeSpent" value="94537000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="40" width="1641" height="986" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29062957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2443077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -493,15 +383,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/routes/api.php" />
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Http/Controllers/TaskController.php" />
-    <entry file="file://$PROJECT_DIR$/AplicacionFronted/index1.html" />
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/User.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/app/Task.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/server.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/config/auth.php" />
@@ -543,54 +429,88 @@
     <entry file="file://$PROJECT_DIR$/AplicacionFronted/controllers/mainController.js" />
     <entry file="file://$PROJECT_DIR$/AplicacionFronted/controllers/notify.js" />
     <entry file="file://$PROJECT_DIR$/AplicacionFronted/index1.html" />
-    <entry file="file://$PROJECT_DIR$/laravelAPI/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/laravelAPI/resources/assets/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="170">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="128" column="9" lean-forward="false" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+        <state relative-caret-position="340">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravelAPI/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laravelAPI/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/notify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="73" column="21" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/assets/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="1" column="661" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1179" />
           <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="111" column="81" lean-forward="false" selection-start-line="111" selection-start-column="81" selection-end-line="111" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="213" column="48" lean-forward="true" selection-start-line="213" selection-start-column="48" selection-end-line="213" selection-end-column="48" />
+        <state relative-caret-position="391">
+          <caret line="149" column="60" lean-forward="false" selection-start-line="149" selection-start-column="60" selection-end-line="149" selection-end-column="60" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/notify.js">
+    <entry file="file://$PROJECT_DIR$/laravelAPI/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="332">
+          <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppFrontend/index1.html">
+    <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/mainController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+        <state relative-caret-position="385">
+          <caret line="298" column="40" lean-forward="false" selection-start-line="298" selection-start-column="29" selection-end-line="298" selection-end-column="40" />
           <folding />
         </state>
       </provider>

@@ -18,6 +18,29 @@
     <![endif]-->
 </head>
 <body>
+
+
+<script>
+    window.onload = function() {
+        FB.init({
+            appId      : '238624763288222',
+            xfbml      : true,
+            version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
 <p><br/></p>
 
 <div class="container">
@@ -70,7 +93,7 @@
                     <h2 class="text-center">
                         <span>Nueva tarea</span>
                     </h2>
-                    <form method="post" class="form login-form" id="newTask" onsubmit="newTask(); return false"  enctype="multipart/form-data">
+                    <form method="post" action="#" class="form login-form" id="newTask" onsubmit="newTask(); return false"  enctype="multipart/form-data">
                         <div class="row uniform text-center">
                             <center>
                                 <div class="form-group">
@@ -103,7 +126,7 @@
             <div class="well">
                     <div class="container">
                         <h1>Mis tareas</h1>
-                        <button name="button_myTasks" id="button_myTasks" class="btn btn-info" onclick="myTasks(); return false">Cargar mis tareas</button>
+                        <button name="button_myTasks" id="button_myTasks" class="btn btn-primary" onclick="myTasks(); return false">Cargar mis tareas</button>
                         <br>
                         <hr>
                         <table class="table table-striped table-bordered table-hover" id="myTableTasks">
@@ -149,6 +172,6 @@
 <script src="assets/notify/notify.min.js"></script>
 <script src="assets/notify/notify-metro.js"></script>
 <script src="controllers/notify.js"></script>
-<script src="controllers/mainController.js"></script>
+<script src="controllers/main.js"></script>
 </body>
 </html>
