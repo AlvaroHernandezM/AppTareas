@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0562015-a4b6-4ed5-920e-560cbccea016" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppFrontend/controllers/main.js" afterPath="$PROJECT_DIR$/AppFrontend/controllers/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" afterPath="$PROJECT_DIR$/laravelAPI/app/Http/Controllers/TaskController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppFrontend/index.html" afterPath="$PROJECT_DIR$/AppFrontend/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AppFrontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="141" column="22" lean-forward="false" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+            <state relative-caret-position="164">
+              <caret line="86" column="70" lean-forward="false" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -28,8 +27,48 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="300" column="14" lean-forward="false" selection-start-line="300" selection-start-column="14" selection-end-line="300" selection-end-column="14" />
+            <state relative-caret-position="266">
+              <caret line="236" column="27" lean-forward="false" selection-start-line="236" selection-start-column="22" selection-end-line="236" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notify.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/notify.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notify.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppFrontend/assets/notify/notify.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notify-metro.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppFrontend/assets/notify/notify-metro.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notify-metro.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppFrontend/assets/notify/notify-metro.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -69,16 +108,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/laravelAPI/database/migrations/2014_10_12_000000_create_users_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/laravelAPI/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,13 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>edi</find>
-      <find>delete</find>
-      <find>se debe re</find>
-      <find>newTaskAction</find>
-      <find>destroyDataTableMyTasks</find>
-      <find>initDataTableMyTasks</find>
-      <find>destro</find>
       <find>mainContr</find>
       <find>mytask</find>
       <find>jquer</find>
@@ -126,10 +148,17 @@
       <find>myTask</find>
       <find>myTasks</find>
       <find>POST</find>
-      <find>newTask</find>
       <find>getMyTasks</find>
-      <find>open</find>
       <find>MyTas</find>
+      <find>myTas</find>
+      <find>console.log</find>
+      <find>MyTasks</find>
+      <find>allTasks</find>
+      <find>newTask</find>
+      <find>newtas</find>
+      <find>open</find>
+      <find>new</find>
+      <find>Error</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -252,7 +281,20 @@
               <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppFrontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="notify" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppFrontend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppTareas" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppFrontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="AppTareas" type="b2602c69:ProjectViewProjectNode" />
@@ -348,12 +390,12 @@
       <workItem from="1502030301067" duration="8482000" />
       <workItem from="1502049826356" duration="12912000" />
       <workItem from="1502113277828" duration="13930000" />
-      <workItem from="1502143192401" duration="19129000" />
+      <workItem from="1502143192401" duration="23491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96904000" />
+    <option name="totallyTimeSpent" value="101266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="40" width="1641" height="986" extended-state="0" />
@@ -392,9 +434,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/server.php" />
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/config/auth.php" />
-    <entry file="file://$PROJECT_DIR$/pruebaTrabajo/config/broadcasting.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/config/mail.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/routes/channels.php" />
     <entry file="file://$PROJECT_DIR$/pruebaTrabajo/routes/console.php" />
@@ -456,14 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/notify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="73" column="21" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AppFrontend/assets/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -507,23 +538,55 @@
         <state relative-caret-position="266">
           <caret line="80" column="122" lean-forward="false" selection-start-line="80" selection-start-column="118" selection-end-line="80" selection-end-column="122" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppFrontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="141" column="22" lean-forward="false" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+        <state relative-caret-position="164">
+          <caret line="86" column="70" lean-forward="false" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/notify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/assets/notify/notify.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/assets/notify/notify-metro.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppFrontend/assets/notify/notify-metro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppFrontend/controllers/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="300" column="14" lean-forward="false" selection-start-line="300" selection-start-column="14" selection-end-line="300" selection-end-column="14" />
+        <state relative-caret-position="266">
+          <caret line="236" column="27" lean-forward="false" selection-start-line="236" selection-start-column="22" selection-end-line="236" selection-end-column="27" />
           <folding />
         </state>
       </provider>
