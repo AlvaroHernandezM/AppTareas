@@ -1,3 +1,3 @@
 # AppTareas
 
-Frontend: Bootstrap, DataTable
+Frontend: Bootstrap, DataTable, Notify
